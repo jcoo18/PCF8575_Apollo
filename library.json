@@ -1,0 +1,29 @@
+{
+    "name": "PCF8575 Artemis Lib",
+    "description": "PCF8575 is a library for reading a I2C PCF8575 device on a SparkFun Artemis controller.",
+    "keywords": "PCF8575,SparkFun Atremis",
+    "authors": [
+        {
+            "name": "Jamie Coombe",
+            "url": "https://github.com/jcoo18",
+            "maintainer": true
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jcoo18/PCF8575_Atremis.git"
+    },
+    "version": "0.1",
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": "atmelavr, Artemis",
+    "headers": "PCF8575_Atremis.h",
+    "build": {
+        "srcFilter": [
+            "+<*.c>",
+            "+<*.cpp>",
+            "+<*.h>"
+        ],
+        "libArchive": false
+    }
+}
