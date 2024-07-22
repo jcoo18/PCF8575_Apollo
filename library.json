@@ -16,7 +16,7 @@
     "version": "0.1",
     "license": "MIT",
     "frameworks": "arduino",
-    "platforms": "atmelavr, Artemis",
+    "platforms": "atmelavr, sfe_artemis_atp",
     "headers": "PCF8575_Atremis.h",
     "build": {
         "srcFilter": [

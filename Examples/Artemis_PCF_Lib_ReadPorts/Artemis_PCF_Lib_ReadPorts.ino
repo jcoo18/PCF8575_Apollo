@@ -1,5 +1,6 @@
 #include <Wire.h>
-#include "PCF8575_Apollo.h"
+//#include <PCF8575_Artemis.h>
+#include "PCF8575_Artemis.h"
 
 const byte PIN_QWIIC_SCL = 8;
 const byte PIN_QWIIC_SDA = 9;
@@ -14,7 +15,7 @@ const byte PIN_QWIIC_POWER = 18;
 #define HARDWARE_VERSION_MAJOR 1
 #define HARDWARE_VERSION_MINOR 0
 
-PCF8575_Apollo pcf(qwiic);
+PCF8575_Artemis pcf(qwiic);
 
 void setup()
 {

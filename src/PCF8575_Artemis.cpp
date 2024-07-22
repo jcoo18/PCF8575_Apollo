@@ -1,11 +1,11 @@
-#include "PCF8575_Atremis.h"
+#include "PCF8575_Artemis.h"
 #include "Wire.h"
 
 /**
 * Constructor
 * @param wireInterface: constructed wire interface
 */
-PCF8575_Atremis::PCF8575_Atremis(TwoWire *wireInterface)
+PCF8575_Artemis::PCF8575_Artemis(TwoWire *wireInterface)
 {
     _wire = wireInterface;
 }
@@ -14,7 +14,7 @@ PCF8575_Atremis::PCF8575_Atremis(TwoWire *wireInterface)
 * Begin
 * @param address: i2c address 0x20 to 0x27
 */
-bool PCF8575_Atremis::begin(uint8_t address)
+bool PCF8575_Artemis::begin(uint8_t address)
 {
     _address = address;
      _wire.beginTransmission(_address);
@@ -32,7 +32,7 @@ bool PCF8575_Atremis::begin(uint8_t address)
 * Function
 * @return: 16bit value of all port states
 */
-uint16_t PCF8575_Atremis::readPorts()
+uint16_t PCF8575_Artemis::readPorts()
 {
     _wire.beginTransmission(_address);
     if (_wire.endTransmission() == 0)
